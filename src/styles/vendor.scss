@@ -1,0 +1,65 @@
+@import "~normalize.css";
+@import "colors";
+
+// PAGE MENU
+.page{
+  &__header{
+    padding: 20px 40px;
+  }
+  &__content{
+
+  }
+  &__item{
+    padding: 40px;
+    border-bottom: 1px solid $borderGrey;
+  }
+}
+.inline-navigation{
+  display: inline-flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  &__item{
+  }
+}
+
+//LINK
+.link{
+  display: inline-block;
+  padding: 10px 40px;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 8px;
+  border: 1px solid $primary;
+  color: $primary;
+  &:hover{
+    cursor: pointer;
+    background: $primaryAlpha02;
+  }
+}
+
+
+// COLORS
+.colors{
+  display: inline-flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin: -10px;
+  &__item{
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 0 0 20%;
+  }
+  &__preview{
+    border: 1px solid $borderGrey;
+    border-radius: 8px;
+    height: 100px;
+  }
+  &__title{
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+}

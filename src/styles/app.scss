@@ -1,0 +1,27 @@
+@import "floors";
+@import "colors";
+
+// WRAPPER
+.modal{
+  &__header{
+
+  }
+  &__body{
+    background-color: #f5f5f5;
+    display: inline-flex;
+    padding: 40px;
+  }
+  &__aside{
+    flex: 0 0 280px;
+    padding: 0 10px 0 0;
+  }
+  &__content{
+    padding: 0 0 0 10px;
+  }
+  &__search{
+    margin: 0 0 20px 0;
+  }
+  &__preview{
+    margin: -10px;
+  }
+}

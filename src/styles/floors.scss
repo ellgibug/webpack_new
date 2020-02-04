@@ -1,0 +1,163 @@
+@import "colors";
+
+@font-face {
+  font-family: "RobotoThin";
+  src: url("../assets/fonts/Roboto-Thin.ttf") format("ttf");
+}
+body {
+//  background: url("../assets/images/image.jpg");
+  font-family: "RobotoThin", sans-serif;
+}
+
+// TOOLBAR
+.modal-header{
+  padding: 16px 40px;
+  display: inline-flex;
+  color: $white;
+  background: $primary;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.6;
+  &__title{
+
+  }
+  &__action{
+    cursor: pointer;
+  }
+}
+
+
+// INPUT
+.input{
+  border: solid 1px $borderGrey;
+  border-radius: 8px;
+  display: flex;
+  padding: 20px;
+
+  &__icon{
+    color: $inputGrey;
+  }
+
+  &__control{
+    height: 100%;
+    border: none;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    color: $inputGrey;
+    padding: 0  0 0 12px;
+
+  }
+  &__control:focus{
+    outline: none;
+  }
+}
+
+
+// MENU
+.menu{
+  background: white;
+  border-radius: 8px;
+  max-height: fit-content;
+  box-shadow: 1px 1px 6px $boxShadow;
+  &__item{
+
+  }
+  &__item.is-active{
+    background: $activeMenuItem;
+  }
+}
+
+.menu-item{
+  padding: 16px 20px;
+  cursor: pointer;
+  &__title{
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+
+// GRID
+.grid{
+  display: inline-flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__item{
+    padding: 10px;
+    box-sizing: border-box;
+    flex: 0 0 50%;
+  }
+  //@media screen and (max-width: 900px) {
+  //  display: flex;
+  //  &__item{
+  //    padding: 0;
+  //    box-sizing: border-box;
+  //    flex: 0 0 100%;
+  //  }
+  //}
+}
+
+
+
+// CARD
+.card {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 8px;
+  position: relative;
+  &__header {
+    border-bottom: 1px solid $borderGrey;
+    padding: 16px 20px;
+    background: $white;
+    font-size: 14px;
+  }
+  &__body {
+
+  }
+  &__image{
+    width: 100%;
+    object-fit: cover !important;
+    height: 100%;
+  }
+  &__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $overlay;
+    transition: opacity 0.1s linear;
+  }
+  &:hover &__overlay {
+    opacity: 1;
+    background: $overlay;
+  }
+}
+
+
+// BUTTON
+.button{
+  background: $primary;
+  border-radius: 8px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 68px;
+  &:hover{
+    cursor: pointer;
+    background: $primaryHover;
+  }
+  &:focus{
+    outline: none;
+  }
+}

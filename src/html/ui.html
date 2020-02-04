@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI</title>
+    <link rel="icon" href="<%= require('../assets/favicon.png') %>" type="image/png">
+</head>
+<body>
+
+<div class="page">
+    <div class="page__header">
+        <div class="inline-navigation">
+            <div class="inline-navigation__item">
+                <h1>UI Kit</h1>
+            </div>
+            <div class="inline-navigation__item">
+                <a href="./index.html" class="link">
+                    Floors Picker
+                    <i class="far fa-arrow-alt-circle-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page__content">
+        <div class="page__item">
+            <h2>Цвета</h2>
+             <div class="colors">
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #1976d2"></div>
+                     <div class="colors__title">Primary #1976d2</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #15589f"></div>
+                     <div class="colors__title">Primary Hover #15589f</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: rgba(25,118,210,0.2)"></div>
+                     <div class="colors__title">Primary Alpha 0.2 rgba(25,118,210,0.2)</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #fff"></div>
+                     <div class="colors__title">White #ffffff</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #f5f5f5"></div>
+                     <div class="colors__title">Background grey #f5f5f5</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #CDCDCD"></div>
+                     <div class="colors__title">Border Grey #CDCDCD</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #858585"></div>
+                     <div class="colors__title">Input Grey #858585</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #E5E5E5"></div>
+                     <div class="colors__title">Box Shadow #E5E5E5</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #E3F2FD"></div>
+                     <div class="colors__title">Active Menu Item #E3F2FD</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: rgba(0,0,0,0.6)"></div>
+                     <div class="colors__title">Overlay rgba(0,0,0,0.6)</div>
+                 </div>
+                 <div class="colors__item">
+                     <div class="colors__preview" style="background: #000"></div>
+                     <div class="colors__title">Black #000000</div>
+                 </div>
+
+             </div>
+        </div>
+        <div class="page__item">
+            <h2>Заголовок модального окна</h2>
+            <div class="modal-header">
+                <div class="modal-header__title">
+                    Меню выбора блоков
+                </div>
+                <div class="modal-header__action">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="page__item">
+            <h2>Ввод</h2>
+            <div class="input">
+                <div class="input__icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input class="input__control" type="search" placeholder="Поиск...">
+            </div>
+        </div>
+        <div class="page__item">
+            <h2>Меню (список)</h2>
+            <div class="menu">
+                <div class="menu__item menu-item is-active">
+                    <div class="menu-item__title">Все блоки (47)</div>
+                </div>
+                <div class="menu__item menu-item">
+                    <div class="menu-item__title">Контентные (16)</div>
+                </div>
+                <div class="menu__item menu-item">
+                    <div class="menu-item__title">Разводящие (8)</div>
+                </div>
+                <div class="menu__item menu-item">
+                    <div class="menu-item__title">Специализированные (9)</div>
+                </div>
+                <div class="menu__item menu-item">
+                    <div class="menu-item__title">Шаблонные (3)</div>
+                </div>
+                <div class="menu__item menu-item">
+                    <div class="menu-item__title">Формы (4)</div>
+                </div>
+                <div class="menu__item menu-item">
+                    <div class="menu-item__title">Технические (7)</div>
+                </div>
+            </div>
+        </div>
+        <div class="page__item">
+            <h2>Сетка</h2>
+            <div class="grid">
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__header">Горизонтальный текстово-графический блок</div>
+                        <div class="card__body">
+                            <img class="card__image" src="<%= require('../assets/images/floor.jpg') %>" alt="image">
+                        </div>
+                        <div class="card__overlay">
+                            <button class="button primary">Просмотр</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__header">Вертикальный текстово-графический блок</div>
+                        <div class="card__body">
+                            <img class="card__image" src="<%= require('../assets/images/floor.jpg') %>" alt="image">
+                        </div>
+                        <div class="card__overlay">
+                            <button class="button primary">Просмотр</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__header">Контакты</div>
+                        <div class="card__body">
+                            <img class="card__image" src="<%= require('../assets/images/floor.jpg') %>" alt="image">
+                        </div>
+                        <div class="card__overlay">
+                            <button class="button primary">Просмотр</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__header">Комплектации и цены</div>
+                        <div class="card__body">
+                            <img class="card__image" src="<%= require('../assets/images/floor.jpg') %>" alt="image">
+                        </div>
+                        <div class="card__overlay">
+                            <button class="button primary">Просмотр</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__header">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad asperiores cupiditate delectus, dolorum ea earum enim mollitia nam optio
+                            perferendis quasi repellendus rerum, similique sint sit sunt unde. Cum, ut.</div>
+                        <div class="card__body">
+                            <img class="card__image" src="<%= require('../assets/images/floor.jpg') %>" alt="image">
+                        </div>
+                        <div class="card__overlay">
+                            <button class="button primary">Просмотр</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item">
+                    <div class="card">
+                        <div class="card__header">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ad asperiores cupiditate delectus</div>
+                        <div class="card__body">
+                            <img class="card__image" src="<%= require('../assets/images/floor.jpg') %>" alt="image">
+                        </div>
+                        <div class="card__overlay">
+                            <button class="button primary">Просмотр</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__item">
+            <h2>Карточка</h2>
+            <div class="card">
+                <div class="card__header">Горизонтальный текстово-графический блок</div>
+                <div class="card__body">
+                    <img class="card__image" src="<%= require('../assets/images/floor.jpg') %>" alt="image">
+                </div>
+                <div class="card__overlay">
+                    <button class="button primary">Просмотр</button>
+                </div>
+            </div>
+        </div>
+        <div class="page__item">
+            <h2>Кнопка .button</h2>
+            <button class="button primary">Просмотр</button>
+        </div>
+        <div class="page__item">
+            <h2>Ссылка .link</h2>
+            <a href="#" class="link">
+                Ссылка
+                <i class="far fa-arrow-alt-circle-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
